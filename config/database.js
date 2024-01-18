@@ -1,13 +1,13 @@
-const { Sequelize } = require("sequelize");
+const { Sequelize } = require('sequelize');
 
-const dbName = "Livraria";
-const dbUser = "Admin";
-const dbPassorword = "1234";
+const dbName = 'Livraria';
+const dbUser = 'root';
+const dbPassorword = '';
 const dbHost = "localhost";
 
 const sequelize = new Sequelize(dbName, dbUser, dbPassorword, {
   host: dbHost,
-  dialect: "mysql",
+  dialect: 'mysql'
 });
 
-exports.sequelize = sequelize;
+module.exports = sequelize;
