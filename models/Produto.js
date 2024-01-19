@@ -1,29 +1,40 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/database");
 
-class Produto extends Model { }
+// criação da classe filha Produto , extendida do objeto Model
+class Produto extends Model {}
 
-Produto.init({
+Produto.init(
+  // Fazendo a atribuição da classe produto
+  {
     id_Produto: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
+      // Definindo o tipo do dado como integer
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
     },
     nome_produto: {
-        type: DataTypes.STRING
+      // Definindo o tipo do dado como String (Varchar - SQL)
+      type: DataTypes.STRING,
     },
     descricao: {
-        type: DataTypes.TEXT
+      // Definindo o tipo do dado como text
+      type: DataTypes.TEXT,
     },
     preco_unitario: {
-        type: DataTypes.DECIMAL
-    }
-
-}, {
+      // Definindo o tipo do dado como Decimal
+      type: DataTypes.DECIMAL,
+    },
+  },
+  {
     sequelize,
-    modelName: 'produto',
-    timestamps: false
-}
-).sync()
+    // específica o nome da tabela 
+    modelName: "produto",
+    // desativamento da criação do carimbo de tempo 
+    timestamps: false,
+  }
+
+  //Instruindo o sequelize a criar a tabela Produto dentro do Banco SQL
+).sync();
 
 module.exports = Produto;
