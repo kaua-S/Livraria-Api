@@ -38,7 +38,7 @@ Produto.init(
 ).sync();
 
 
-//Utilizando o metodo create para inserir valores dentro do banco SQL
+//Utilizando a função create para inserir valores dentro do banco SQL
 
 Produto.create(
     {

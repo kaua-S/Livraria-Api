@@ -1,5 +1,4 @@
 
-
 // Requisições:
 
 //Fazendo a requisição do express
@@ -29,6 +28,7 @@ const PORT = process.env.PORT || 3000;
 // Usando o metódo authenticate para esperar a resposta do servidor 
 db.authenticate()
     .then(() => {
+        
         app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
         console.log('Conexão com o banco de dados estabelecida com sucesso.')
     })
