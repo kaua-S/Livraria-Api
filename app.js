@@ -1,18 +1,32 @@
+
+
+// Requisições:
+
+//Fazendo a requisição do express
 const express = require('express');
+
+//criando uma nova instancia do express , através da função express() que serve como um constructor 
 const app = express();
+
+// Requisitando as configurações do database
 const db = require('./config/database');
+
+// Requisitando as rotas do produto 
 const produtosRoute = require('./routes/produtosRoute');
+
+// Requisitando o modelo produto 
 const Produto = require('./models/Produto')
 
 
 // Middlewares
 app.use(express.json());
 
-
+// Utilizando as rotas 
 app.use(produtosRoute);
 
 const PORT = process.env.PORT || 3000;
 
+// Usando o metódo authenticate para esperar a resposta do servidor 
 db.authenticate()
     .then(() => {
         app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
