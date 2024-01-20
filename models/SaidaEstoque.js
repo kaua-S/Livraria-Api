@@ -14,9 +14,9 @@ SaidaEstoque.init({
     quantidade:{
         type:DataTypes.INTEGER
     },
-    data_entrada:{
+    data_saida:{
     type:DataTypes.DATE
     }
 }).sync()
 
-EntradaEstoque.belongsTo(Produto);
+SaidaEstoqueEstoque.belongsTo(Produto);
