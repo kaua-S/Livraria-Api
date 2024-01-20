@@ -19,3 +19,4 @@ EntradaEstoque.init({
     }
 }).sync()
 
+EntradaEstoque.belongsTo(Produto);
