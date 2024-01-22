@@ -1,22 +1,24 @@
-const{Model , DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const { belongsTo } = require('./Produto');
-const Produto = require('./Produto');
 
-class EntradaEstoque extends Model{}
-
-EntradaEstoque.init({
-    id_Entrada:{
-        type:DataTypes.INTEGER,
-        primaryKey:true,
-        autoIncrement:true
+const EntradaEstoque = sequelize.define("entrada_estoque", {
+    id_entrada: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
-    quantidade:{
-        type:DataTypes.INTEGER
+    quantidade: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
-    data_entrada:{
-    type:DataTypes.DATE
-    }
-}).sync()
+    data_entrada: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
+    
+}, {
+    timestamps: false
+})
 
-EntradaEstoque.belongsTo(Produto);
+
+module.exports = EntradaEstoque;
