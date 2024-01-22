@@ -13,8 +13,16 @@ const db = require('./config/database');
 // Requisitando as rotas do produto 
 const produtosRoute = require('./routes/produtosRoute');
 
+// Requisitando as rotas do Estoque 
+const EntradasRoute = require('./routes/entradaRoute');
+
 // Requisitando o modelo produto 
 const Produto = require('./models/Produto')
+
+// Requisitando o modelo EntradaEstoque 
+const EntradaEstoque = require('./models/EntradaEstoque')
+const SaidaEstoque = require('./models/SaidaEstoque')
+
 
 
 // Middlewares
@@ -22,13 +30,15 @@ app.use(express.json());
 
 // Utilizando as rotas 
 app.use(produtosRoute);
+app.use(EntradasRoute);
+
 
 const PORT = process.env.PORT || 3000;
 
 // Usando o metódo authenticate para esperar a resposta do servidor 
 db.authenticate()
     .then(() => {
-        
+
         app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
         console.log('Conexão com o banco de dados estabelecida com sucesso.')
     })
