@@ -35,4 +35,5 @@ Produto.hasMany(EntradaEstoque, { foreignKey: { name: 'id_produto' } })
 Produto.hasMany(SaidaEstoque, { foreignKey: { name: 'id_produto' } })
 
 
+
 module.exports = Produto;

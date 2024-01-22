@@ -2,8 +2,7 @@ const express = require("express");
 const router = express.Router();
 const EntradaController = require("../controllers/EntradaController");
 
-//Rota para criar um novo produto
-router.post("/entradas", EntradaController.createEntrada);
+
 
 //Rota para obter todos os produtos
 router.get("/entradas", EntradaController.getAllEntradas);

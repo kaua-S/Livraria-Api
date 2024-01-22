@@ -14,7 +14,7 @@ const db = require('./config/database');
 const produtosRoute = require('./routes/produtosRoute');
 
 // Requisitando as rotas do Estoque 
-const EntradasRoute = require('./routes/entradaRoute');
+const entradasRoute = require('./routes/entradaRoute');
 
 // Requisitando o modelo produto 
 const Produto = require('./models/Produto')
@@ -23,14 +23,13 @@ const Produto = require('./models/Produto')
 const EntradaEstoque = require('./models/EntradaEstoque')
 const SaidaEstoque = require('./models/SaidaEstoque')
 
-
-
+EntradaEstoque.sync()
 // Middlewares
 app.use(express.json());
 
 // Utilizando as rotas 
 app.use(produtosRoute);
-app.use(EntradasRoute);
+app.use(entradasRoute);
 
 
 const PORT = process.env.PORT || 3000;

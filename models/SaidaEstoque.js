@@ -9,11 +9,11 @@ const SaidaEstoque = sequelize.define("saida_estoque", {
     },
     quantidade: {
         type: DataTypes.INTEGER,
-        allowNull: false
+      
     },
     data_saida: {
         type: DataTypes.DATE,
-        allowNull: false
+      
     }
 }, {
     timestamps: false
