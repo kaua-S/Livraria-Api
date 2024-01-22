@@ -2,7 +2,7 @@
 const { Sequelize } = require("sequelize");
 
 // Fazendo a armagenagem das configurações do banco de dados
-const dbName = "Livraria";
+const dbName = "livraria";
 const dbUser = "root";
 const dbPassorword = "";
 const dbHost = "localhost";
