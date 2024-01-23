@@ -9,10 +9,10 @@
  
 
 
-<h2>Sobre</h2>
+<h2 align="center">Sobre</h2>
 
 
-<h2>Motivação</h2>
+<h2 align="center">Motivação</h2>
 
 
-<h2>Funcionamento</h2>
+<h2 align="center">Funcionamento</h2>
