@@ -1,4 +1,4 @@
 
 
-![Figura sobre livros empilhados](file:///C:/Users/kaua_mellato/Downloads/library-opened-svgrepo-com.svg)
+![Figura sobre livros empilhados](https://www.svgrepo.com/svg/374347/library-opened)
 
