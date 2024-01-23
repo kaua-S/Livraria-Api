@@ -24,6 +24,7 @@ const EntradaController = {
         data_entrada,
         id_produto
       });
+       res.json(novaEntrada);
     } catch (error) {
       res.status(500).send(error.message);
     }
