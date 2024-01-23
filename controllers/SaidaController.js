@@ -16,7 +16,13 @@ const SaidaController = {
   createSaida: async (req, res) => {
     try {
       //criando um novo produto a partir do corpo da requisição  , recebendo informações do produto vindas pelo json         
-      const novaSaida = await SaidaEstoque.create(req.body);
+      const id_produto = req.params.id    
+      const { quantidade, data_saida } = req.body
+      const novaSaida = await SaidaEstoque.create({
+        quantidade,
+        data_saida,
+        id_produto
+      });    
       res.json(novaEntrada);
     } catch (error) {
       res.status(500).send(error.message);
