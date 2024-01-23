@@ -57,7 +57,7 @@ const EntradaController = {
       }
       //Fazendo o updtade pelo corpo da requisição , 
       // await = aviso para o codigo não continuar até a ação ser concluída  
-      await produto.update(req.body);
+      await Entrada.update(req.body);
        // enviado uma reposta utilizando o método send 
       res.send("Entrada no estoque atualizado com sucesso");
     } catch (error) {
@@ -75,7 +75,7 @@ const EntradaController = {
       }
       //Fazendo o delete do produto
       // await = aviso para o codigo não continuar até a ação ser concluída 
-      await produto.destroy();
+      await Entrada.destroy();
       // enviado uma reposta utilizando o método send 
       res.send("Entrada no estoque deletada com sucesso");
     } catch (error) {
