@@ -2,7 +2,7 @@
 
 </h1>
 
-<p>
+<p align="center">
     <a href="#-Sobre">Sobre</a>|<a></a>  
 </p>
   
