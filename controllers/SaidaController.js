@@ -23,7 +23,7 @@ const SaidaController = {
         data_saida,
         id_produto
       });    
-      res.json(novaEntrada);
+      res.json(novaSaida);
     } catch (error) {
       res.status(500).send(error.message);
     }
