@@ -17,8 +17,13 @@ const EntradaController = {
   createEntrada: async (req, res) => {
     try {
       //criando um novo produto a partir do corpo da requisição  , recebendo informações do produto vindas pelo json         
-      const novaEntrada = await EntradaEstoque.create(req.body);
-      res.json(novaEntrada);
+      const id_produto = req.params.id    
+      const { quantidade, data_entrada } = req.body
+      const novaEntrada = await EntradaEstoque.create({
+        quantidade,
+        data_entrada,
+        id_produto
+      });
     } catch (error) {
       res.status(500).send(error.message);
     }
