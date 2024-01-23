@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "e6e9051f-c7f2-407a-9b0c-a7cc88340e0d",
+		"name": "SaidaEstoque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32429340"
+	},
+	"item": [
+		{
+			"name": "SaidaEstoque",
+			"item": [
+				{
+					"name": "Criar uma saida",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"quantidade\":98,\r\n \"data_saida\":\"2024-12-17\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/saidas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas as saidas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar uma saida especifica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saidas/:id?id=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								":id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar uma saida especifica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantidade\":98,\r\n    \"data_entrada\":\"2024-01-19\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/saidas/:id?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								":id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar uma saida especifica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saidas/:id?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								":id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

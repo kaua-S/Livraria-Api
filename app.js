@@ -16,6 +16,8 @@ const produtosRoute = require('./routes/produtosRoute');
 // Requisitando as rotas do Estoque 
 const entradasRoute = require('./routes/entradaRoute');
 
+const saidasRoute = require('./routes/saidaRoute')
+
 // Requisitando o modelo produto 
 const Produto = require('./models/Produto')
 
@@ -33,7 +35,7 @@ app.use(express.json());
 // Utilizando as rotas 
 app.use(produtosRoute);
 app.use(entradasRoute);
-
+app.use(saidasRoute);
 
 const PORT = process.env.PORT || 3000;
 
