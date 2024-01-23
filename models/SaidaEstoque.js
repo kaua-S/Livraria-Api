@@ -15,6 +15,10 @@ const  SaidaEstoque = sequelize.define("saida_estoque",{
     data_saida:{
     type:DataTypes.DATE
     }
-}) 
+}, {
+    timestamps: false
+})
+
+module.exports = SaidaEstoque
 
 
