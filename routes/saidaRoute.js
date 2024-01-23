@@ -4,18 +4,18 @@ const EntradaController = require("../controllers/EntradaController");
 const ProdutoController = require('../controllers/ProdutoController');
 const SaidaController = require('../controllers/SaidaController');
 
-router.post("/saidas", SaidaController.createSaida);
+router.post("/saidas/:id", SaidaController.createSaida);
 
 //Rota para obter todos os produtos
-router.get("/entradas", SaidaController.getAllSaidas);
+router.get("/saidas", SaidaController.getAllSaidas);
 
 //Rota para obter um produto pelo ID
-router.get("/entradas/:id", SaidaController.getSaidaById );
+router.get("/saidas/:id", SaidaController.getSaidaById );
 
 //Rota para atualizar um produto
-router.put("/entradas/:id", SaidaController.updateSaida);
+router.put("/saidas/:id", SaidaController.updateSaida);
 
 //Rota para deletar um produto
-router.delete("/entradas/:id", SaidaController.deleteSaida);
+router.delete("/saidas/:id", SaidaController.deleteSaida);
 
 module.exports = router;
