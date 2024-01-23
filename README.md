@@ -1,5 +1,4 @@
 
 
-![Figura sobre livros empilhados](https://cdn-icons-png.flaticon.com/512/4696/4696808.png)
-
+![Figura sobre livros empilhados](file:///C:/Users/kaua_mellato/Downloads/library-opened-svgrepo-com.svg)
 
