@@ -4,7 +4,7 @@
  <a href="#-Sobre">Tecnologia</a>  |   <a href="#-Sobre">Sobre</a>  |  <a href="#-Motivação">Motivação</a>  |  <a href="#-Funcionamento">Funcionamento</a> 
 </p>
   
- <h2 align="center"> <img src="https://e7.pngegg.com/pngimages/885/281/png-clipart-computer-icons-spacecraft-rocket-angle-monochrome.png" width="25" padding="0"> Tecnologias</h2>
+ <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3064/3064889.png" width="25" padding="0"> Tecnologias</h2>
 <p align="center"></p>
 
 
