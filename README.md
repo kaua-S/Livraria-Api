@@ -7,7 +7,7 @@
  
 
 
-<h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3356/3356068.png" width="40">Sobre</h2>
+<h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3356/3356068.png" width="30"> Sobre</h2>
 <p align="center">No programa de preparação Entra21 , na matéria de Node foi designado o trabalho de se fabricar uma API 100% funcional, dessa forma , foi desenvolvido uma API que realiza o criação , busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque   </p>
 
 
