@@ -13,7 +13,7 @@
     busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque   </p>
 
 
-<h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/7224/7224338.png" width="25" padding="0"> Motivação</h2>
+<h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/4370/4370707.png" width="25" padding="0"> Motivação</h2>
 <p align="center">  </p>
 
-<h2 align="center">Funcionamento</h2>
+<h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/7224/7224338.png" width="25" padding="0"> Funcionamento</h2>
