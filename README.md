@@ -8,7 +8,7 @@
 
 
 <h2 align="center">Sobre</h2>
-<p>No programa de preparação Entra21 , na matéria de node foi designado o trabalho de se fabricar uma api , utilizando-se do conhecimento adquirido por meio do professor Samuel </p>
+<p>No programa de preparação Entra21 , na matéria de Node foi designado o trabalho de se fabricar uma API 100% funcional, dessa forma , foi desenvolvido uma API que realiza o criação , busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque   </p>
 
 
 <h2 align="center">Motivação</h2>
