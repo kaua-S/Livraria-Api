@@ -1,7 +1,7 @@
 <h1 align="center">   📚Api sobre Livraria</h1>
 
 <p align="center">
- <a href="#-Sobre">Tecnologia</a>   |    <a href="#-Sobre">Projeto</a>   |   <a href="#-Motivação">Motivação</a>   |   <a href="#-Funcionamento">Funcionamento</a> 
+ <a href="#-Sobre"> Tecnologia </a>   |    <a href="#-Sobre"> Projeto </a>   |   <a href="#-Motivação"> Motivação </a>   |   <a href="#-Funcionamento"> Funcionamento </a> 
 </p>
   
  <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3064/3064889.png" width="25" padding="0"> Tecnologias</h2>
