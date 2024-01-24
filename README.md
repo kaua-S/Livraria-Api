@@ -8,6 +8,7 @@
 
 
 <h2 align="center">Sobre</h2>
+<p>No programa de preparação Entra21 , na matéria de node foi designado o trabalho de se fabricar uma api , utilizando-se do conhecimento adquirido por meio do professor Samuel </p>
 
 
 <h2 align="center">Motivação</h2>
