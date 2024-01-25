@@ -184,7 +184,7 @@ module.exports = ProdutoController;
 
 Parte 4 : criando as rotas que o modelo Produto ira utilizar 
 
-´´´javascript
+```javascript
 const express = require("express");
 const router = express.Router();
 const ProdutoController = require("../controllers/ProdutoController");
@@ -205,6 +205,6 @@ router.put("/produtos/:id", ProdutoController.updateProduto);
 router.delete("/produtos/:id", ProdutoController.deleteProduto);
 
 module.exports = router;
-´´´
+```
 
  </p>
