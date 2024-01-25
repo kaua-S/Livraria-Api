@@ -50,6 +50,35 @@ module.exports = sequelize;</b>
 
  Como visto na imagem a conexão é feita por meio do sequelize que é uma OR que conecta o codigo com o banco de dados <br><br>
 
+ Parte2:Criando uma das 3 entidades , sendo a escolhida EntradaEstoque
+
+ ```javascript
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/database');
+
+const EntradaEstoque = sequelize.define("entrada_estoque", {
+    id_entrada: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    quantidade: {
+        type: DataTypes.INTEGER,
+
+    },
+    data_entrada: {
+        type: DataTypes.DATE,
+
+    },
+
+}, {
+    timestamps: false
+})
+
+
+module.exports = EntradaEstoque;
+```
+
  Parte3:Criando o controle de uma das entidades geradas 
 
 ```javascript
