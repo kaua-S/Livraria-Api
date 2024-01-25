@@ -25,4 +25,5 @@
 <p> Atribui minha motivação a desenvolver esse projeto por meio de uma experiencia vivida , pois me encontrei em frustração com um sebo de livros, que não possui tecnologia adequada para o atendimento agilizado   </p>
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/4370/4370707.png" width="25" padding="0"> Funcionamento</h2>
-
+<p>Parte 1 : Conexão com o banco de dados : <img src="![parte1](https://github.com/kaua-S/Livraria-Api/assets/126474688/b80a1258-3434-4c10-a99e-755b2aa8beb6)
+"></p>
