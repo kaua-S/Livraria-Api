@@ -17,7 +17,7 @@
 
 <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/1317/1317626.png" width="25" padding="0"> Projeto</h2>
 <p align="center">No programa de preparação Entra21 , na matéria de Node foi designado
-    o trabalho de se fabricar uma API 100% funcional, dessa forma , foi desenvolvido uma API que realiza o criação , 
+    o trabalho de se fabricar uma API 100% funcional, dessa forma , foi desenvolvido uma API que realiza a criação , 
     busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque   </p>
 
 
