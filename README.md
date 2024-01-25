@@ -22,7 +22,7 @@
 
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/7224/7224338.png" width="25" padding="0"> Motivação</h2>
-<p align="center">  </p>
+<p align="center"> Atribui minha motivação a desenvolver esse projeto por meio de uma experiencia vivida , pois me encontrei em frustração com um sebo de livros, que não possui tecnologia adequada para o atendimento agilizado   </p>
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/4370/4370707.png" width="25" padding="0"> Funcionamento</h2>
 
