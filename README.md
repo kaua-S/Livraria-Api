@@ -5,7 +5,7 @@
 </p>
   
  <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3064/3064889.png" width="25" padding="0"> Tecnologias</h2>
-<p align="center"></p>
+<ul><li>JavaScript</li></ul>
 
 
 <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/1317/1317626.png" width="25" padding="0"> Projeto</h2>
