@@ -50,36 +50,44 @@ module.exports = sequelize;</b>
 
  Como visto na imagem a conexão é feita por meio do sequelize que é uma OR que conecta o codigo com o banco de dados <br><br>
 
- Parte2:Criando uma das 3 entidades , sendo a escolhida EntradaEstoque
+ Parte2: Criando uma das 3 entidades , sendo a escolhida Produtos
 
  ```javascript
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const { DataTypes } = require("sequelize");
+const sequelize = require("../config/database");
+const EntradaEstoque = require('./EntradaEstoque');
+const SaidaEstoque = require('./SaidaEstoque');
 
-const EntradaEstoque = sequelize.define("entrada_estoque", {
-    id_entrada: {
+
+// criação da constante Produto , utilizando o define para definir o modelo e suas propriedades 
+const Produto = sequelize.define("produto", {
+    id_produto: {
+        // Definindo o tipo do dado como integer
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true
+        autoIncrement: true,
     },
-    quantidade: {
-        type: DataTypes.INTEGER,
-
+    nome_produto: {
+        // Definindo o tipo do dado como String (Varchar - SQL)
+        type: DataTypes.STRING,
+        allowNull: false
     },
-    data_entrada: {
-        type: DataTypes.DATE,
-
+    descricao: {
+        // Definindo o tipo do dado como text (text - SQL)
+        type: DataTypes.TEXT,
+        allowNull: false
     },
-
+    preco_unitario: {
+        // Definindo o tipo do dado como Decimal (Decimal - SQL)
+        type: DataTypes.DECIMAL,
+        allowNull: false
+    }
 }, {
     timestamps: false
-})
-
-
-module.exports = EntradaEstoque;
+});
 ```
 
- Parte3:Criando o controle de uma das entidades geradas 
+ Parte3: Criando o controle de uma das entidades geradas 
 
 ```javascript
  / Fazendo a requisições :
