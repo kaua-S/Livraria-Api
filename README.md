@@ -5,7 +5,10 @@
 </p>
   
  <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3064/3064889.png" width="25" padding="0"> Tecnologias</h2>
-<ul><li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" > </li></ul>
+<ul>
+ <li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" > </li>
+ <li><img src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white" > </li>
+</ul>
 
 
 <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/1317/1317626.png" width="25" padding="0"> Projeto</h2>
