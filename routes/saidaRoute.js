@@ -1,7 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const EntradaController = require("../controllers/EntradaController");
-const ProdutoController = require('../controllers/ProdutoController');
 const SaidaController = require('../controllers/SaidaController');
 
 router.post("/saidas/:id", SaidaController.createSaida);

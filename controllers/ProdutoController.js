@@ -14,7 +14,7 @@ const res = require("express/lib/response");
 
 // Criando a constante ProdutoController
 const ProdutoController = {
-  
+
   //Criação do Produto
   createProduto: async (req, res) => {
     try {
@@ -51,7 +51,7 @@ const ProdutoController = {
 
   updateProduto: async (req, res) => {
     try {
-        // Buscando o produto por id 
+      // Buscando o produto por id 
       const produto = await Produto.findByPk(req.params.id);
       if (!produto) {
         //Se o id não for encontrado recebera essa mensagem 
@@ -60,7 +60,7 @@ const ProdutoController = {
       //Fazendo o updtade pelo corpo da requisição , 
       // await = aviso para o codigo não continuar até a ação ser concluída  
       await produto.update(req.body);
-       // enviado uma reposta utilizando o método send 
+      // enviado uma reposta utilizando o método send 
       res.send("Produto atualizado com sucesso");
     } catch (error) {
       res.status(500).send(error.message);
@@ -69,10 +69,10 @@ const ProdutoController = {
 
   deleteProduto: async (req, res) => {
     try {
-     // Buscando o produto por id 
+      // Buscando o produto por id 
       const produto = await Produto.findByPk(req.params.id);
       if (!produto) {
-          //Se o id não for encontrado recebera essa mensagem 
+        //Se o id não for encontrado recebera essa mensagem 
         return res.status(404).send("Produto não encontrado");
       }
       //Fazendo o delete do produto

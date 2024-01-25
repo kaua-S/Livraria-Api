@@ -29,6 +29,7 @@ const SaidaEstoque = require('./models/SaidaEstoque')
 Produto.sync();
 EntradaEstoque.sync();
 SaidaEstoque.sync();
+
 // Middlewares
 app.use(express.json());
 
