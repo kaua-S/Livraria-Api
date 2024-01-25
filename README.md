@@ -18,7 +18,7 @@
 <h2 align="center"> <img src="https://cdn-icons-png.flaticon.com/512/1317/1317626.png" width="25" padding="0"> Projeto</h2>
 <p align="center">No programa de preparação Entra21 , na matéria de Node foi designado
     o trabalho de se fabricar uma API 100% funcional, dessa forma , foi desenvolvido uma API que realiza a criação , 
-    busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque   </p>
+    busca , atualização e deletagem das entidades Produto , Entrada Estoque e Saida Estoque. Tal entidades estão ligadas a linguagem de banco SQL , que tem sua intregaão a Api através do ORM Sequelize que produz a integração entre o SQL e o codigo. </p>
 
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/7224/7224338.png" width="25" padding="0"> Motivação</h2>
